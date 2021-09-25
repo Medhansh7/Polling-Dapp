@@ -21,7 +21,7 @@ export default function AllPoll() {
 
     if (networkId) {
       const _voting = new web3.eth.Contract(Votingabi.abi, networkData.address);
-      console.log(_voting);
+
       setAllPollm(_voting);
       const numberOfPolls = await _voting.methods.opinionCount().call();
       let arr = [];

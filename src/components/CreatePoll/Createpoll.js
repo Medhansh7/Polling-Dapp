@@ -16,6 +16,7 @@ export default function Createpoll() {
   const getBLockchainData = async () => {
     const accounts = await web3.eth.getAccounts();
     const networkId = await web3.eth.net.getId();
+    console.log(networkId);
     const networkData = Votingabi.networks[networkId];
     if (networkId) {
       const _voting = new web3.eth.Contract(Votingabi.abi, networkData.address);
