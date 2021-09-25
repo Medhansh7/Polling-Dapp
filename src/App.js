@@ -39,15 +39,19 @@ function App() {
 
   return (
     <Router>
-      <Navbar account={account} />
+      
       {loading ? (
         <h2>Data is Loading...</h2>
       ) : (
+        <>
+    <Navbar account={account} />
         <div className="App">
           <header className="App-header">
             <Routes />
           </header>
         </div>
+        </>
+        
       )}
     </Router>
   );
