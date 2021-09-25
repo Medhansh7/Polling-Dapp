@@ -1,0 +1,12 @@
+.Timer {
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+.time {
+  font-size: 22px;
+}

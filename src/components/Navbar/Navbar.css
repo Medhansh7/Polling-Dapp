@@ -1,0 +1,9 @@
+.list-item-nav {
+  color: rgba(160, 159, 162, 1);
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+.active {
+  color: aqua;
+}
